@@ -1,0 +1,82 @@
+<html>
+    <link rel="stylesheet" href="Rust.css">
+    <head>
+    <body>
+        <div class="hero">
+            <img src="" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="">discord</a></li>
+                    <li><a href="">Source Code</a></li>
+                    <li><a href="donations.html">Donations</a></li>
+                    <li><a href="">faq</a></li>
+                    <button id="notificationButton"></button>
+                    <script src="index.js">
+                         // Check if the browser supports the Notification API
+    if ("Notification" in window) {
+        // Request permission to show notifications
+        Notification.requestPermission().then(function (permission) {
+            console.log('Notification permission:', permission);
+        });
+
+        // Function to show a notification
+        function showNotification() {
+            if (Notification.permission === "granted") {
+                // Create a notification
+                var notification = new Notification("Button Pressed", {
+                    body: "You pressed the button!",
+                });
+
+                // Optional: Close the notification after a few seconds
+                setTimeout(notification.close.bind(notification), 5000);
+            }
+        }
+
+        // Add event listener to the button
+        var button = document.getElementById("notificationButton");
+        button.addEventListener("click", showNotification);
+    } else {
+        console.log('This browser does not support notifications.');
+    }
+    
+    alert('put your Extra faild messages if dint work sometimes')
+    alert('messge to tell where they support you how ever Media or disocrd also ecxuses !')
+    </script>
+</nav>
+            
+            <div class="content">
+            <h1>Play Rust with Arzone</h1>
+            <p>download the source code client to play & constomize</p>
+            <a  href="">download</a>
+            <p>Arzone Rust its a private Servers Mods . Rust is a multiplayer online survival game developed and published by Facepunch Studios. In Rust, players must survive in a harsh open-world environment by gathering resources, crafting items, and forming alliances with other players. The game is known for its challenging gameplay, where players face threats from the environment, wildlife, and other players
+            One unique aspect of Rust is its emphasis on player interactions and emergent gameplay. The game features a realistic day-night cycle and dynamic weather conditions, adding an extra layer of challenge to survival. Additionally, player-versus-player (PvP) combat is a significant element, as players can engage in battles, raid each other's bases, and form alliances or rivalries.
+            Rust has a reputation for its unforgiving nature, where players can lose their progress if they die, making each encounter with other players or environmental challenges intense and strategic. The game has gained popularity for its open-world sandbox design and the unpredictable nature of player interactions.</p>
+            <h1>what is Rust ?</h1>
+            <p>Survival Mode In the survival mode of Rust, players are placed in an open-world environment and must gather resources, craft items, and build structures to survive.
+                The game is known for its harsh and unforgiving mechanics, including a persistent world where players can lose their possessions upon death.
+                Interaction with other players is a significant aspect, and alliances or conflicts can form as players navigate the challenges of the environment.</p>
+                <h1>Battle Royale Mode</h1>
+                <p>Rust also introduced a separate game mode called "Rust: Battle Royale." In this mode, players face off in a last-man-standing competition within a shrinking play area.
+                    Like other battle royale games, players start with minimal equipment and must scavenge for weapons, armor, and resources as the match progresses.
+                    The goal is to eliminate other players while avoiding the ever-shrinking safe zone, pushing players closer together and intensifying encounters.
+                    It's worth noting that game modes and features in online games can evolve through updates and modifications, so there may have been changes or additions to Rust's game modes since my last update. For the most accurate and current information, I recommend checking the official Rust website or community resources for the latest details on game modes and features.</p>
+            </div>
+        </div>
+
+        <div class="boarder">
+            <h2>Pricing Table</h2>
+            <h1> Our Pricing Plan</h1>
+            <p>donations</p>
+            <p>Image perms</p>
+            <p>24/7 Playground Map</p>
+            <p> Priority queue</p>
+            <a href="donations.html">Get Started</a>
+        </div>
+        <div class="reasons">
+            <h1>Perks!</h1>
+            <p>Donators will get cool exclusive perks. Here are some of the perks donators get, cool custom role in eon, image perms, private chat, and etc!</p>
+        </div>
+
+
+</body>
+</html>

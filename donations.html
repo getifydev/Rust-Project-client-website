@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="donations.css">
+</head>
+<body>
+    <div class="hero">
+        <img src="" class="video">
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="">discord</a></li>
+                <li><a href="">download</a></li>
+            </ul>
+        </nav>
+        <div class="content">
+            <h1>donate Arzone</h1>
+            <p>type anything about safety donations here !</p>
+        </div>
+    </div>
+
+
+    <!-- Place this script where you want the button to appear -->
+
+    <div class="paypal-button-container">
+        <a href="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=USD" class="button">Pay Pal</a>
+        <script src="https://www.paypal.com/sdk/js?client-id=YOUR_CLIENT_ID&currency=USD"></script>
+        <script src="donate.js">
+            paypal.Buttons({
+    createOrder: function(data, actions) {
+      return actions.order.create({
+        purchase_units: [{
+          amount: {
+            value: '10.00' // Replace with the default donation amount
+          }
+        }]
+      });
+    },
+    onApprove: function(data, actions) {
+      return actions.order.capture().then(function(details) {
+        alert('Transaction completed by ' + details.payer.name.given_name + '!');
+      });
+    }
+  }).render('#paypal-button-container');
+</script>
+
+<!-- Place this div where you want the button to appear -->
+<div id="paypal-button-container"></div>
+        </script>
+    </div>
+
+    <!-- Replace YOUR_CLIENT_ID with your actual PayPal client ID -->
+
+
+
+
+    
+</body>
+</html>

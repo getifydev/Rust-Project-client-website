@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 10;
+    text-align: center;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: 'Poppins' ,sans-serif;
+    list-style-type: none;
+    color: #fff;
+}
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url('RustHomePageImage.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    align-items: center;
+    justify-content: safe;
+    border: 15px solid lightblue;
+    padding: 10%;
+    box-shadow: 2px 5px 30px lightblue;
+    border-radius: 50px;
+    margin-top: 38px;
+}
+input {
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    border: 5px solid lightblue;
+    border-radius: 50px;
+}
+.boarder-payment {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px
+}
+.border-payment {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.border-payment:hover {
+    padding: 8.5px;
+    transition: 0.1s;
+}
+.hero {
+    width: 100%;
+    background-image: linear-gradient rgba(12,3,51,0.3)(12,3,51,0.3);
+    position: relative;
+    padding: 0 5%;
+    align-items: center;
+    justify-content: safe;
+}
+nav ul li a {
+    text-decoration: none;
+    text-align: left;
+    border: 2px solid lightblue;
+    margin-top: 20px;
+    padding: 5px;
+    border-radius: 50px;
+}
+nav ul li {
+    list-style-type: none;
+    display: inline-block;
+    margin-top: 40px;
+    top: 10%;
+}
+a {
+    background-color: #3498db;
+    border: none;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 21.5px;
+    border: 1px solid transparent;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    text-align: center;
+    font-weight: 600;
+    box-shadow: 2px 5px 30px blue;
+}
+a:hover {
+    padding: 8.5px;
+    transition: 0.1s ease-in-out;
+}
